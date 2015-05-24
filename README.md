@@ -1,6 +1,3 @@
-<<<<<<< HEAD
----
-
 #Getting-and-Cleaning-Data-Assignment
 
 Run_Analysis.R R-script on Human Activity Recognition Using Smartphones Dataset
@@ -14,7 +11,4 @@ Partial string matching using grep is used to identify the columns that include 
 Using the "merge" function, descriptive activity names and subject are merged with the mean/std values dataset, to get one dataset with descriptive activity names
 
 With the help of the "melt" and "dcast" functions of the "reshape2" package, the data is converted into a table containing mean values of all the included featuresand the data is written to the "Average_tidy_data.txt" file.
-=======
-# Data-Science
-Data Science Repository for Analytics
->>>>>>> 00ae5e97481ab5093676fb0e8a810874efd6edce
+
