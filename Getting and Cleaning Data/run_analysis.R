@@ -52,4 +52,13 @@ all_data <- cbind(subject_full,Y_full, X_mean_std)
 full_data<-merge(activities,all_data,by.x="activityId",by.y="activityId",all=TRUE)
 write.table(full_data, "tidy_data.txt")
 
+##task5  creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+library(reshape2)
+data_melt <- melt(full_data,id=c("activityId","activityLabel","subjectId"))
+mean_data <- dcast(data_melt,activityId + activityLabel + subjectId ~ variable,mean)
+
+## Create a file with the new tidy dataset
+write.table(mean_data,"./Average_tidy_data.txt")
+
+
 }
