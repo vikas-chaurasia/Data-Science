@@ -1,4 +1,4 @@
-#Getting-and-Cleaning-Data-Assignment
+##Getting-and-Cleaning-Data-Assignment
 
 Run_Analysis.R R-script on Human Activity Recognition Using Smartphones Dataset
 
